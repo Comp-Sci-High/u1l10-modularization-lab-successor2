@@ -2,7 +2,6 @@
 
 // The functions you will be writing will all be modifying the array groceryList below.
 // Leave it alone.
-let groceryList = ["Milk", "Oreos"];
 
 // Part 1 - Modularizing
 // In this section, you will use the existing code and turn them into functions.
@@ -57,7 +56,8 @@ function current(groceryList){
   } else {
     console.log("Grocery List: " + groceryList);
     return groceryList;
-  };
+  }};
+
 // Returns the grocery list array.
 
 // Code to modularize:
@@ -81,7 +81,7 @@ function itemsLeft(groceryList){
 // It should log the following "The grocery list is now empty."
 // Returns the empty grocery list.
 function clear(groceryList){
-  console.log("The grocery list has ${x} item(s).")
+  console.log("The grocery list is now empty.")
   return groceryList.length;
 }
 
@@ -93,7 +93,6 @@ function clear(groceryList){
 
 /*
 // The grocery list is cleared
-
 // Item added: Gouda Cheese
 // Item added: Brie Cheese
 // Item added: Swiss Cheese
@@ -108,31 +107,32 @@ function clear(groceryList){
 // Item added: Pita Chips
 // Grocery List: Gouda Cheese, Brie Cheese, Green Grapes, Prosciutto, Jamon, Multigrain Crackers, Pita Chips
 */
+let groceryList = ["Milk", "Oreos"];
 
 // Call 1: Clear the grocery list
-
+clear(groceryList)
 // Call 2: Add Gouda Cheese
-
+let newCheese = add(groceryList,"Gouda Cheese")
 // Call 3: Add Swiss Cheese
-
+let Cheese = add(groceryList,"Swiss Cheese")
 // Call 4: Remove Swiss Cheese
-
+let subCheese = subtract(groceryList,"Swiss Cheese")
 // Call 5: Add Green Grapes
-
+let Grapes = add(groceryList,"Green Grapes")
 // Call 6: Add Prosciutto
-
+let Prosciutto = add(groceryList,"Prosciutto")
 // Call 7: Add Chorizo
-
+let Chorizo = add(groceryList,"Chorizo")
 // Call 8: Add Multigrain Crackers
-
+let Crackers = add(groceryList,"Multigrain Crackers")
 // Call 9: Update Chorizo to Jamon
-
+update(indexToUpdate,"Jamon","Chorizo")
 // Call 10: Show the count of items
-
+current(groceryList)
 // Call 11: Add Pita Chips
-
+add(groceryList,item)
 // Call 12: Show the final list
-
+itemsLeft(groceryList)
 
 //////////////////////////////////////////////////////////////////////
 // Extra Credit - Improving functions
